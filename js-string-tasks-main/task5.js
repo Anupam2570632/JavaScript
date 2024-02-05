@@ -1,3 +1,5 @@
+// problem --- Capitalize Every first Letter of each word in a String
+
 const str = "i am learning web development";
 let result = "";
 console.log(str.length);

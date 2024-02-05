@@ -1,3 +1,5 @@
+//problem----Find the lowest number in an array 
+
 function findLowest(Numbers) {
     let lowest = Numbers[0];
     for (let i = 0; i < Numbers.length; i++) {

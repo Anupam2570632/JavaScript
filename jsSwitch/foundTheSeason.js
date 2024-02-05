@@ -1,3 +1,5 @@
+// problem --- input a month Number and show the season of this month 
+
 function getSession(month) {
     switch (month) {
         case 1:

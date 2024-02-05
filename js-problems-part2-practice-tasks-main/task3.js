@@ -1,3 +1,5 @@
+//problem---Your task is to calculate the total budget required to buy electronics:
+
 function calculateElectronicsBudget(laptop, tablet, mobile) {
     const laptopPrice = 35000;
     const tabletPrice = 15000;

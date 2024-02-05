@@ -1,3 +1,5 @@
+//problem----Count how many times a string has the letter a
+
 const str = "My name is badhon roy";
 let count = 0;
 

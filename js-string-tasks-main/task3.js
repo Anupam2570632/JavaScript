@@ -1,3 +1,5 @@
+// problem ---- Check whether a string contains all the vowels a, e, i, o, u
+
 const str = "I am a boy";
 
 for (let i = 0; i < str.length; i++) {
