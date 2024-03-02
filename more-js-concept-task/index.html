@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: cyan;
+        }
+        h1{
+            padding: 1em;
+            font-size: 2em;
+            color: blue;
+        }
+        #joke{
+            padding: 1em;
+            font-size: 1em;
+            color: black;
+            font-weight: 700;
+            max-height: 600px;
+            max-width: 600px;
+            border: 2px solid gray;
+            margin: 2em 1em;
+        }
+        button{
+            margin: 2em;
+            padding: 1em 2em;
+            border-radius: .3em;
+            background-color: rgb(19, 195, 95);
+            color: white;
+            font-weight: 800;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(65, 205, 126);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>
+    Here's a joke for you ,
+    <br>
+    Make the day beautiful for you..
+</h1>
+
+    <div id="joke">
+
+    </div>
+
+    <button onclick="dataLoad()">
+        New Joke
+    </button>
+
+
+
+
+    <script>
+
+        const dataLoad = async () => {
+            const res = await fetch('https://v2.jokeapi.dev/joke/Programming?type=single');
+            const data = await res.json();
+
+            const jokeSpace = document.getElementById('joke');
+
+            jokeSpace.innerText = data.joke;
+
+        }
+
+        dataLoad();
+    </script>
+
+</body>
+
+</html>
